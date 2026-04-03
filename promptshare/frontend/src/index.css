@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* This makes the main content "hide" the footer until the end */
+body {
+  background-color: #050505; /* Matches footer background */
+}
+
+/* Ensure the text doesn't show before the animation */
+.char {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
